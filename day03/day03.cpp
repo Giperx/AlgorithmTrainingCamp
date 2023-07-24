@@ -13,5 +13,3 @@ int DeleteMinRet(int *a, int &n){
     return min;
 }
 
-
-### 代码
