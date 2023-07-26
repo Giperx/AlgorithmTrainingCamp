@@ -23,7 +23,7 @@ void deleteX(SqList &list, int x){
         }
         // 否则 将非x元素前移到p1处
         else{
-           list.data[p1] = list.data[p2];
+           list.data[p1] = list.data[p2]
            p1++;
         }
     }
