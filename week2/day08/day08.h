@@ -4,7 +4,7 @@
 
 #ifndef ALGCAMP_DAY08_H
 #define ALGCAMP_DAY08_H
-#include "../structDef/List/SqList.h"
+#include "../../structDef/List/SqList.h"
 
 void deleteValueRange(SqList &list, int a, int b);
 

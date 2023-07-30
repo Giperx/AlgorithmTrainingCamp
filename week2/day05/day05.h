@@ -1,7 +1,7 @@
 //
 // Created by Giperx on 2023/7/25.
 //
-#include "../structDef/List/SqList.h"
+#include "../../structDef/List/SqList.h"
 #ifndef ALGCAMP_DAY05_H
 #define ALGCAMP_DAY05_H
 

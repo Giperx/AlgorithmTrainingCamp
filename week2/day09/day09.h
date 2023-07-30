@@ -4,7 +4,7 @@
 
 #ifndef ALGCAMP_DAY09_H
 #define ALGCAMP_DAY09_H
-#include "../structDef/List/SqList.h"
+#include "../../structDef/List/SqList.h"
 
 void deleteDuplicate(SqList &list);
 

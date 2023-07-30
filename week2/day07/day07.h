@@ -4,7 +4,7 @@
 
 #ifndef ALGCAMP_DAY07_H
 #define ALGCAMP_DAY07_H
-#include "../structDef/List/SqList.h"
+#include "../../structDef/List/SqList.h"
 
 void partition(SqList &list);
 
