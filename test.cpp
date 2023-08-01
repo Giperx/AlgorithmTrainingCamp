@@ -12,6 +12,7 @@
 #include "structDef/List/SqList.h"
 #include "week2/day09/day09.h"
 #include "week3/day10/day10.h"
+#include "week3/day11/day11.h"
 using namespace std;
 //int main(){
 //    SqList list;
@@ -23,20 +24,37 @@ using namespace std;
 //    return 0;
 //}
 
-// day10
+// day11
 int main(){
-    SqList list;
-    cout << "init sorted list" << endl;
-    initSqList(list);
-    printSqList(list);
-    cout << "enter value a and b to delete list(sorted):";
-    int a, b;
-    cin >> a >> b;
-    deleteSortedValueRange(list, a, b);
+    SqList list1;
+    cout << "init sorted list1" << endl;
+    initSqList(list1);
+    printSqList(list1);
+    SqList list2;
+    cout << "init sorted list2" << endl;
+    initSqList(list2);
+    printSqList(list2);
     cout << "after :" << endl;
-    printSqList(list);
+    SqList *tmp;
+    tmp = CombineSqList(list1, list2);
+    printSqList(*tmp);
     return 0;
 }
+
+//// day10
+//int main(){
+//    SqList list;
+//    cout << "init sorted list" << endl;
+//    initSqList(list);
+//    printSqList(list);
+//    cout << "enter value a and b to delete list(sorted):";
+//    int a, b;
+//    cin >> a >> b;
+//    deleteSortedValueRange(list, a, b);
+//    cout << "after :" << endl;
+//    printSqList(list);
+//    return 0;
+//}
 
 //// day09
 //int main(){
