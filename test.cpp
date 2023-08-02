@@ -13,6 +13,7 @@
 #include "week2/day09/day09.h"
 #include "week3/day10/day10.h"
 #include "week3/day11/day11.h"
+#include "week3/day12/day12.h"
 using namespace std;
 //int main(){
 //    SqList list;
@@ -24,22 +25,36 @@ using namespace std;
 //    return 0;
 //}
 
-// day11
+// day12
 int main(){
-    SqList list1;
-    cout << "init sorted list1" << endl;
-    initSqList(list1);
-    printSqList(list1);
-    SqList list2;
-    cout << "init sorted list2" << endl;
-    initSqList(list2);
-    printSqList(list2);
+    SqList list;
+    initSqList(list);
+    printSqList(list);
+    cout << "enter two list lengths:" << endl;
+    int l1, l2;
+    cin >> l1 >> l2;
     cout << "after :" << endl;
-    SqList *tmp;
-    tmp = CombineSqList(list1, list2);
-    printSqList(*tmp);
+    superReverse(list, l1, l2);
+    printSqList(list);
     return 0;
 }
+
+//// day11
+//int main(){
+//    SqList list1;
+//    cout << "init sorted list1" << endl;
+//    initSqList(list1);
+//    printSqList(list1);
+//    SqList list2;
+//    cout << "init sorted list2" << endl;
+//    initSqList(list2);
+//    printSqList(list2);
+//    cout << "after :" << endl;
+//    SqList *tmp;
+//    tmp = CombineSqList(list1, list2);
+//    printSqList(*tmp);
+//    return 0;
+//}
 
 //// day10
 //int main(){
