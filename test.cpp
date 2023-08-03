@@ -3,17 +3,19 @@
 //
 
 #include <iostream>
+#include <vector>
+#include "structDef/List/SqList.h"
 #include "week1/day03/day03.h"
 #include "week2/day04/day04.h"
 #include "week2/day05//day05.h"
 #include "week2/day06/day06.h"
 #include "week2/day07/day07.h"
 #include "week2/day08/day08.h"
-#include "structDef/List/SqList.h"
 #include "week2/day09/day09.h"
 #include "week3/day10/day10.h"
 #include "week3/day11/day11.h"
 #include "week3/day12/day12.h"
+#include "week3/day13/day13.h"
 using namespace std;
 //int main(){
 //    SqList list;
@@ -25,19 +27,46 @@ using namespace std;
 //    return 0;
 //}
 
-// day12
+// day13
 int main(){
-    SqList list;
-    initSqList(list);
-    printSqList(list);
-    cout << "enter two list lengths:" << endl;
-    int l1, l2;
-    cin >> l1 >> l2;
-    cout << "after :" << endl;
-    superReverse(list, l1, l2);
-    printSqList(list);
+    vector<vector<int>> arr;
+    int row, col;
+    cin >> row >> col;
+    for (int i = 0; i < row; ++i) {
+        vector<int> tmp;
+        for (int j = 0; j < col; ++j) {
+            int m;
+            cin >> m;
+            tmp.emplace_back(m);
+        }
+        arr.emplace_back(tmp);
+    }
+
+    for(auto x:arr){
+        for(auto y:x){
+            cout << y << ' ';
+        }
+        cout << endl;
+    }
+    int target;
+    cin >> target;
+    cout << searchInSortedArray(arr, target) << endl;
     return 0;
 }
+
+//// day12
+//int main(){
+//    SqList list;
+//    initSqList(list);
+//    printSqList(list);
+//    cout << "enter two list lengths:" << endl;
+//    int l1, l2;
+//    cin >> l1 >> l2;
+//    cout << "after :" << endl;
+//    superReverse(list, l1, l2);
+//    printSqList(list);
+//    return 0;
+//}
 
 //// day11
 //int main(){
