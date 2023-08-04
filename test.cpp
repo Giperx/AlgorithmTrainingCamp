@@ -16,6 +16,7 @@
 #include "week3/day11/day11.h"
 #include "week3/day12/day12.h"
 #include "week3/day13/day13.h"
+#include "week3/day14/day14.h"
 using namespace std;
 //int main(){
 //    SqList list;
@@ -27,32 +28,45 @@ using namespace std;
 //    return 0;
 //}
 
-// day13
+// day14
 int main(){
-    vector<vector<int>> arr;
-    int row, col;
-    cin >> row >> col;
-    for (int i = 0; i < row; ++i) {
-        vector<int> tmp;
-        for (int j = 0; j < col; ++j) {
-            int m;
-            cin >> m;
-            tmp.emplace_back(m);
-        }
-        arr.emplace_back(tmp);
+    vector<int> arr;
+    int n, tmp, target;
+    cin >> n;
+    for (int i = 0; i < n; ++i) {
+       cin >> tmp;
+       arr.emplace_back(tmp);
     }
-
-    for(auto x:arr){
-        for(auto y:x){
-            cout << y << ' ';
-        }
-        cout << endl;
-    }
-    int target;
     cin >> target;
-    cout << searchInSortedArray(arr, target) << endl;
+    cout << binarySearch(arr,target) << endl;
     return 0;
 }
+//// day13
+//int main(){
+//    vector<vector<int>> arr;
+//    int row, col;
+//    cin >> row >> col;
+//    for (int i = 0; i < row; ++i) {
+//        vector<int> tmp;
+//        for (int j = 0; j < col; ++j) {
+//            int m;
+//            cin >> m;
+//            tmp.emplace_back(m);
+//        }
+//        arr.emplace_back(tmp);
+//    }
+//
+//    for(auto x:arr){
+//        for(auto y:x){
+//            cout << y << ' ';
+//        }
+//        cout << endl;
+//    }
+//    int target;
+//    cin >> target;
+//    cout << searchInSortedArray(arr, target) << endl;
+//    return 0;
+//}
 
 //// day12
 //int main(){
