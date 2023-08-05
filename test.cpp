@@ -17,6 +17,7 @@
 #include "week3/day12/day12.h"
 #include "week3/day13/day13.h"
 #include "week3/day14/day14.h"
+#include "week3/day15/day15.h"
 using namespace std;
 //int main(){
 //    SqList list;
@@ -28,19 +29,35 @@ using namespace std;
 //    return 0;
 //}
 
-// day14
+// day15
 int main(){
-    vector<int> arr;
-    int n, tmp, target;
+    int n;
     cin >> n;
-    for (int i = 0; i < n; ++i) {
-       cin >> tmp;
-       arr.emplace_back(tmp);
+    int arr[n];
+    for(auto &x:arr){
+        cin >> x;
     }
-    cin >> target;
-    cout << binarySearch(arr,target) << endl;
+    for(auto x:arr) cout << x << ' ';
+    cout << endl;
+    quickSort(arr, 0, n - 1);
+    cout << "after :" << endl;
+    for(auto x:arr) cout << x << ' ';
+    cout << endl;
     return 0;
 }
+//// day14
+//int main(){
+//    vector<int> arr;
+//    int n, tmp, target;
+//    cin >> n;
+//    for (int i = 0; i < n; ++i) {
+//       cin >> tmp;
+//       arr.emplace_back(tmp);
+//    }
+//    cin >> target;
+//    cout << binarySearch(arr,target) << endl;
+//    return 0;
+//}
 //// day13
 //int main(){
 //    vector<vector<int>> arr;
