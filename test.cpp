@@ -19,6 +19,7 @@
 #include "week3/day14/day14.h"
 #include "week3/day15/day15.h"
 #include "week4/day16/day16.h"
+#include "week4/day17/day17.h"
 using namespace std;
 //int main(){
 //    SqList list;
@@ -30,7 +31,7 @@ using namespace std;
 //    return 0;
 //}
 
-// day15    day16
+// day15    day16   day17
 int main(){
     int n;
     cin >> n;
@@ -42,7 +43,8 @@ int main(){
     cout << endl;
 //    quickSort(arr, 0, n - 1);
 //    bubbleSort(arr, n);
-    selectSort(arr, n);
+//    selectSort(arr, n);
+    insertSort(arr, n);
     cout << "after :" << endl;
     for(auto x:arr) cout << x << ' ';
     cout << endl;
