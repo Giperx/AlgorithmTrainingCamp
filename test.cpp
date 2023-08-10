@@ -21,6 +21,7 @@
 #include "week4/day16/day16.h"
 #include "week4/day17/day17.h"
 #include "week4/day18/day18.h"
+#include "week4/day19/day19.h"
 using namespace std;
 //int main(){
 //    SqList list;
@@ -32,29 +33,36 @@ using namespace std;
 //    return 0;
 //}
 
-// day15    day16   day17   day18
+// day19
 int main(){
-    int n;
-    cin >> n;
-    int arr[n];
-    for(auto &x:arr){
-        cin >> x;
-    }
-    for(auto x:arr) cout << x << ' ';
-    cout << "enter p:";
-    int p;
-    cin >> p;
-    cout << endl;
-//    quickSort(arr, 0, n - 1);
-//    bubbleSort(arr, n);
-//    selectSort(arr, n);
-//    insertSort(arr, n);
-    leftRotate(arr, n, p);
-    cout << "after :" << endl;
-    for(auto x:arr) cout << x << ' ';
-    cout << endl;
+    int arrA[5] = {2, 4, 6, 8, 20}, arrB[5] = {11, 13, 15, 17, 19};
+    cout << SerachMiddleInTwo(arrA, arrB, 5);
     return 0;
 }
+
+//// day15    day16   day17   day18
+//int main(){
+//    int n;
+//    cin >> n;
+//    int arr[n];
+//    for(auto &x:arr){
+//        cin >> x;
+//    }
+//    for(auto x:arr) cout << x << ' ';
+//    cout << "enter p:";
+//    int p;
+//    cin >> p;
+//    cout << endl;
+////    quickSort(arr, 0, n - 1);
+////    bubbleSort(arr, n);
+////    selectSort(arr, n);
+////    insertSort(arr, n);
+//    leftRotate(arr, n, p);
+//    cout << "after :" << endl;
+//    for(auto x:arr) cout << x << ' ';
+//    cout << endl;
+//    return 0;
+//}
 //// day14
 //int main(){
 //    vector<int> arr;
