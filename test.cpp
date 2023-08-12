@@ -23,6 +23,7 @@
 #include "week4/day18/day18.h"
 #include "week4/day19/day19.h"
 #include "week4/day20/day20.h"
+#include "week4/day21/day21.h"
 using namespace std;
 //int main(){
 //    SqList list;
@@ -34,13 +35,19 @@ using namespace std;
 //    return 0;
 //}
 
-// day19    day20
+// day19    day20   day21
 int main(){
+    //day19
 //    int arrA[5] = {2, 4, 6, 8, 20}, arrB[5] = {11, 13, 15, 17, 19};
 //    cout << SerachMiddleInTwo(arrA, arrB, 5);
+    // day20
 //    int arr[8] = {0, 5, 5, 3, 5, 7, 5, 5};
-    int arr[8] = {0, 5, 5, 3, 5, 1, 5, 7};
-    cout << findMajorityElement(arr, 8) << endl;
+//    int arr[8] = {0, 5, 5, 3, 5, 1, 5, 7};
+//    cout << findMajorityElement(arr, 8) << endl;
+    // day21
+//    int arr[4] = {1, 2, 3, 4};
+    int arr[4] = {1, 2, 5, 9};
+    cout << findMinNotIn(arr, 4) << endl;
     return 0;
 }
 
