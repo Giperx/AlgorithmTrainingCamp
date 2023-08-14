@@ -24,6 +24,7 @@
 #include "week4/day19/day19.h"
 #include "week4/day20/day20.h"
 #include "week4/day21/day21.h"
+#include "week5/day22/day22.h"
 using namespace std;
 //int main(){
 //    SqList list;
@@ -35,21 +36,30 @@ using namespace std;
 //    return 0;
 //}
 
-// day19    day20   day21
+// day 22
 int main(){
-    //day19
-//    int arrA[5] = {2, 4, 6, 8, 20}, arrB[5] = {11, 13, 15, 17, 19};
-//    cout << SerachMiddleInTwo(arrA, arrB, 5);
-    // day20
-//    int arr[8] = {0, 5, 5, 3, 5, 7, 5, 5};
-//    int arr[8] = {0, 5, 5, 3, 5, 1, 5, 7};
-//    cout << findMajorityElement(arr, 8) << endl;
-    // day21
-//    int arr[4] = {1, 2, 3, 4};
-    int arr[4] = {1, 2, 5, 9};
-    cout << findMinNotIn(arr, 4) << endl;
+    int A[3] = {-1, 0, 9},
+    B[4] = {-25, -10, 10, 11},
+    C[5] = {2, 9, 17, 30, 41};
+    cout << findMinDistofTrip(A, 3, B, 4, C, 5) << endl;
     return 0;
 }
+
+//// day19    day20   day21
+//int main(){
+//    //day19
+////    int arrA[5] = {2, 4, 6, 8, 20}, arrB[5] = {11, 13, 15, 17, 19};
+////    cout << SerachMiddleInTwo(arrA, arrB, 5);
+//    // day20
+////    int arr[8] = {0, 5, 5, 3, 5, 7, 5, 5};
+////    int arr[8] = {0, 5, 5, 3, 5, 1, 5, 7};
+////    cout << findMajorityElement(arr, 8) << endl;
+//    // day21
+////    int arr[4] = {1, 2, 3, 4};
+//    int arr[4] = {1, 2, 5, 9};
+//    cout << findMinNotIn(arr, 4) << endl;
+//    return 0;
+//}
 
 //// day15    day16   day17   day18
 //int main(){
