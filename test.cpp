@@ -5,6 +5,7 @@
 #include <iostream>
 #include <vector>
 #include "structDef/List/SqList.h"
+#include "structDef/List/LinkList.h"
 #include "week1/day03/day03.h"
 #include "week2/day04/day04.h"
 #include "week2/day05//day05.h"
@@ -25,7 +26,23 @@
 #include "week4/day20/day20.h"
 #include "week4/day21/day21.h"
 #include "week5/day22/day22.h"
+#include "week5/day23/day23.h"
 using namespace std;
+
+// day23
+int main(){
+   LinkList L;
+    initLinkList(L);
+    int n, tmp;
+    cin >> n;
+    for (int i = 0; i < n; ++i) {
+        cin >> tmp;
+        appendLinkListRear(L, tmp);
+    }
+    printLinkList(L);
+    return 0;
+}
+
 //int main(){
 //    SqList list;
 //    initSqList(list);
@@ -36,14 +53,14 @@ using namespace std;
 //    return 0;
 //}
 
-// day 22
-int main(){
-    int A[3] = {-1, 0, 9},
-    B[4] = {-25, -10, 10, 11},
-    C[5] = {2, 9, 17, 30, 41};
-    cout << findMinDistofTrip(A, 3, B, 4, C, 5) << endl;
-    return 0;
-}
+//// day 22
+//int main(){
+//    int A[3] = {-1, 0, 9},
+//    B[4] = {-25, -10, 10, 11},
+//    C[5] = {2, 9, 17, 30, 41};
+//    cout << findMinDistofTrip(A, 3, B, 4, C, 5) << endl;
+//    return 0;
+//}
 
 //// day19    day20   day21
 //int main(){
