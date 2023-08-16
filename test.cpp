@@ -27,9 +27,10 @@
 #include "week4/day21/day21.h"
 #include "week5/day22/day22.h"
 #include "week5/day23/day23.h"
+#include "week5/day24/day24.h"
 using namespace std;
 
-// day23
+// day23    day24
 int main(){
    LinkList L;
     initLinkList(L);
@@ -37,7 +38,8 @@ int main(){
     cin >> n;
     for (int i = 0; i < n; ++i) {
         cin >> tmp;
-        appendLinkListRear(L, tmp);
+//        appendLinkListRear(L, tmp);
+        appendLinkListFront(L, tmp);
     }
     printLinkList(L);
     return 0;

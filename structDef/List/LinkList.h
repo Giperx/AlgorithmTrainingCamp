@@ -9,6 +9,10 @@
 typedef struct LNode{
     int data;
     struct LNode *next;
+    LNode(int val){
+        data = val;
+        next = nullptr;
+    }
 }LNode, *LinkList;
 
 // 初始化链表，带头结点
