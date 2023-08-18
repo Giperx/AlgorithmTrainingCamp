@@ -40,10 +40,11 @@ int main(){
     for (int i = 0; i < n; ++i) {
         cin >> tmp;
         appendLinkListRear(L, tmp);
-//        appendLinkListFront(L, tmp);
+        appendLinkListFront(L, tmp);
     }
+    reverseLinkList(L);
     printLinkList(L);
-    reversePrintLinkList(L->next);
+//    reversePrintLinkList(L->next);
     return 0;
 }
 
