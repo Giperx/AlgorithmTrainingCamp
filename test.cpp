@@ -29,9 +29,10 @@
 #include "week5/day23/day23.h"
 #include "week5/day24/day24.h"
 #include "week5/day25/day25.h"
+#include "week5/day27/day27.h"
 using namespace std;
 
-// day23    day24   day25
+// day23    day24   day25   day27
 int main(){
    LinkList L;
     initLinkList(L);
@@ -40,11 +41,15 @@ int main(){
     for (int i = 0; i < n; ++i) {
         cin >> tmp;
         appendLinkListRear(L, tmp);
-        appendLinkListFront(L, tmp);
+//        appendLinkListFront(L, tmp);
     }
-    reverseLinkList(L);
+//    reverseLinkList(L);
     printLinkList(L);
 //    reversePrintLinkList(L->next);
+    // find倒数第k个结点
+    int k;
+    cin >> k;
+    cout << findLastK(L, k) << endl;
     return 0;
 }
 
