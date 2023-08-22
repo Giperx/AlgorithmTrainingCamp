@@ -30,9 +30,11 @@
 #include "week5/day24/day24.h"
 #include "week5/day25/day25.h"
 #include "week5/day27/day27.h"
+#include "week6/day28/day28.h"
+#include "week6/day29/day29.h"
 using namespace std;
 
-// day23    day24   day25   day27
+// day23    day24   day25   day27   day28   day29
 int main(){
    LinkList L;
     initLinkList(L);
@@ -45,11 +47,20 @@ int main(){
     }
 //    reverseLinkList(L);
     printLinkList(L);
+    cout << "after:" << endl;
 //    reversePrintLinkList(L->next);
     // find倒数第k个结点
-    int k;
-    cin >> k;
-    cout << findLastK(L, k) << endl;
+//    int k;
+//    cin >> k;
+//    cout << findLastK(L, k) << endl;
+    // 两个链表AB奇偶存放
+//    LinkList B;
+//    B = divideTwoLinkList(L);
+//    printLinkList(L);
+//    printLinkList(B);
+    // 删除最小值结点
+    delMinOfLinkList(L);
+    printLinkList(L);
     return 0;
 }
 
