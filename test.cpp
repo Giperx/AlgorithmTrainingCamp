@@ -32,37 +32,51 @@
 #include "week5/day27/day27.h"
 #include "week6/day28/day28.h"
 #include "week6/day29/day29.h"
+#include "week6/day30/day30.h"
 using namespace std;
 
-// day23    day24   day25   day27   day28   day29
+// day30 按照递增输出单链表结点数据元素
 int main(){
-   LinkList L;
+    LinkList L;
     initLinkList(L);
     int n, tmp;
     cin >> n;
     for (int i = 0; i < n; ++i) {
         cin >> tmp;
         appendLinkListRear(L, tmp);
-//        appendLinkListFront(L, tmp);
     }
-//    reverseLinkList(L);
-    printLinkList(L);
-    cout << "after:" << endl;
-//    reversePrintLinkList(L->next);
-    // find倒数第k个结点
-//    int k;
-//    cin >> k;
-//    cout << findLastK(L, k) << endl;
-    // 两个链表AB奇偶存放
-//    LinkList B;
-//    B = divideTwoLinkList(L);
-//    printLinkList(L);
-//    printLinkList(B);
-    // 删除最小值结点
-    delMinOfLinkList(L);
-    printLinkList(L);
+    printSortLinkList(L, n);
     return 0;
 }
+//// day23    day24   day25   day27   day28   day29
+//int main(){
+//   LinkList L;
+//    initLinkList(L);
+//    int n, tmp;
+//    cin >> n;
+//    for (int i = 0; i < n; ++i) {
+//        cin >> tmp;
+//        appendLinkListRear(L, tmp);
+////        appendLinkListFront(L, tmp);
+//    }
+////    reverseLinkList(L);
+//    printLinkList(L);
+//    cout << "after:" << endl;
+////    reversePrintLinkList(L->next);
+//    // find倒数第k个结点
+////    int k;
+////    cin >> k;
+////    cout << findLastK(L, k) << endl;
+//    // 两个链表AB奇偶存放
+////    LinkList B;
+////    B = divideTwoLinkList(L);
+////    printLinkList(L);
+////    printLinkList(B);
+//    // 删除最小值结点
+//    delMinOfLinkList(L);
+//    printLinkList(L);
+//    return 0;
+//}
 
 //int main(){
 //    SqList list;
