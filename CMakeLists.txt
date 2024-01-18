@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.25)
 project(AlgCamp)
 
 set(CMAKE_CXX_STANDARD 17)
-
+# 初试算法准备
 #add_executable(day03 test.cpp week1/day03/day03.cpp)
 #add_executable(day04 test.cpp week2/day04/day04.cpp)
 #add_executable(day05 test.cpp week2/day05/day05.cpp)
@@ -29,4 +29,6 @@ set(CMAKE_CXX_STANDARD 17)
 #add_executable(day27 structDef/List/LinkList.cpp test.cpp week5/day27/day27.cpp week5/day23/day23.cpp)
 #add_executable(day28 structDef/List/LinkList.cpp test.cpp week6/day28/day28.cpp week5/day23/day23.cpp)
 #add_executable(day29 structDef/List/LinkList.cpp test.cpp week6/day29/day29.cpp week5/day23/day23.cpp)
-add_executable(day30 structDef/List/LinkList.cpp test.cpp week6/day30/day30.cpp week5/day23/day23.cpp week3/day15/day15.cpp)
+#add_executable(day30 structDef/List/LinkList.cpp test.cpp week6/day30/day30.cpp week5/day23/day23.cpp week3/day15/day15.cpp)
+# 复试练习部分
+add_executable(REday03 reExam/day03/REday03.cpp reExam/structDef/LinkedList.h reExam/structDef/LinkedList.cpp)
