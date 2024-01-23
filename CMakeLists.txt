@@ -31,4 +31,5 @@ set(CMAKE_CXX_STANDARD 17)
 #add_executable(day29 structDef/List/LinkList.cpp test.cpp week6/day29/day29.cpp week5/day23/day23.cpp)
 #add_executable(day30 structDef/List/LinkList.cpp test.cpp week6/day30/day30.cpp week5/day23/day23.cpp week3/day15/day15.cpp)
 # 复试练习部分
-add_executable(REday03 reExam/day03/REday03.cpp reExam/structDef/LinkedList.h reExam/structDef/LinkedList.cpp)
+#add_executable(REday03 reExam/day03/REday03.cpp reExam/structDef/LinkedList.h reExam/structDef/LinkedList.cpp)
+add_executable(REday07 reExam/day07/REday07.cpp reExam/structDef/LinkedList.h reExam/structDef/LinkedList.cpp)
